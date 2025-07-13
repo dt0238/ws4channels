@@ -209,18 +209,18 @@ async function startTranscoding() {
       if (page.isClosed()) {
         clearInterval(captureInterval);
         await startBrowser();
-        captureInterval = setInterval(arguments.callee, 1000 / FRAME_RATE);
+        captureInterval = setInterval(arguments.callee, 100 / FRAME_RATE);
         return;
       }
       const screenshot = await page.screenshot({
         type: 'jpeg',
-        clip: { x: 11, y: 40, width: 631, height: 480 }
+        clip: { x: 0, y: 0, width: 1280, height: 720 }
       });
       ffmpegStream.write(screenshot);
     } catch (err) {
       clearInterval(captureInterval);
       await startBrowser();
-      captureInterval = setInterval(arguments.callee, 1000 / FRAME_RATE);
+      captureInterval = setInterval(arguments.callee, 100 / FRAME_RATE);
     }
   }, 1000 / FRAME_RATE);
 

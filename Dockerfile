@@ -14,6 +14,7 @@ libxdamage1 \
 libxrandr2 \
 libgbm1 \
 libasound2 \
+nano \
 && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
