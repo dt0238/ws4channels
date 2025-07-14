@@ -1,3 +1,7 @@
+# Updates/Changes from Original:
+- Increased resolution of index.js viewport to support widescreen deployments of WS4000.
+
+
 # Known Bugs
 
 None at this time. Latest update(6-7-2025) should fix past issues of errors when running the container on a port different then default, incorrect cpu/ram stats in logs, and a rare memory leak.
