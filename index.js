@@ -214,7 +214,7 @@ async function startTranscoding() {
       }
       const screenshot = await page.screenshot({
         type: 'jpeg',
-        clip: { x: 0, y: 0, width: 1280, height: 720 }
+        clip: { x: 11, y: 40, width: 850, height: 480 }
       });
       ffmpegStream.write(screenshot);
     } catch (err) {
