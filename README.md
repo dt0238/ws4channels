@@ -1,6 +1,6 @@
 # Updates/Changes from Original:
 - Increased resolution of index.js viewport to support widescreen deployments of WS4000.
-
+- Added more generic lo-fi tracks
 
 # Known Bugs
 
